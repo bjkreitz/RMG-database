@@ -525,3 +525,19 @@ u"""
 The adsorbing molecule should not have a charge on the surface.
 """,
 )
+
+forbidden(
+    label = "H2O",
+    group =
+"""
+multiplicity [1]
+1 *1 O u0 p2 c0 {2,S} {3,S}
+2 *2 H u0 p0 c0 {1,S}
+3    H u0 p0 c0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+H2O is assumed to physisorb and then dissociate, do not consider both pathways at the same time
+""",
+)
