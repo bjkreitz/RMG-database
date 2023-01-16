@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 Name='adsorptionPt111'
-N_BEE=2000
+N_BEE=1
 
 label=[]
 index=[]

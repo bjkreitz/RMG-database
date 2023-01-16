@@ -10,7 +10,7 @@ entry(
     index = 1,
     label = "Combined;VacantSite1;VacantSite2",
     kinetics = SurfaceArrheniusBEP(
-        A = (5.726E21, 'm^4/(mol^2*s)'), 
+        A = (5.726E29, 'cm^4/(mol^2*s)'), 
         n = 0.0,  
         alpha = 0.0824, 
         E0 = (50.67, 'kJ/mol'), 

@@ -110,11 +110,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([7.45, 8.51, 9.02, 9.3, 9.55, 9.67, 9.77], 'J/(mol*K)'),
-        H298=(-45.06, 'kJ/mol'),
-        S298=(-120.86, 'J/(mol*K)'),
+        Cpdata=([7.39, 8.41, 8.91, 9.16, 9.4, 9.51, 9.6], 'J/(mol*K)'),
+        H298=(-49.08, 'kJ/mol'),
+        S298=(-123.53, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged H2O, HOOH, CH3OH, HCOOH, CH3CH2OH, CH3OCH3 on Pt(111)""",
+    shortDesc=u"""Came from averaged H2O, HOOH, CH3OH, HCOOH, CH3CH2OH, CH3OCH3, CH3OCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -140,11 +140,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([7.31, 9.09, 10.02, 10.57, 11.16, 11.47, 11.87], 'J/(mol*K)'),
-        H298=(-197.17, 'kJ/mol'),
-        S298=(-158.32, 'J/(mol*K)'),
+        Cpdata=([6.67, 8.28, 9.16, 9.7, 10.33, 10.68, 11.17], 'J/(mol*K)'),
+        H298=(-194.2, 'kJ/mol'),
+        S298=(-157.49, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged *OCH3, *OH, *OCH2CH3, HC*O3, HC*OO, *OCHCH2, *OOH on Pt(111)""",
+    shortDesc=u"""Came from averaged *OCH3, *OH, *OCH2CH3, HC*O3, HC*OO, *OCHCH2, *OOH, *OCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -334,11 +334,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([1.08, 2.04, 2.8, 3.47, 4.48, 5.2, 6.38], 'J/(mol*K)'),
-        H298=(-187.14, 'kJ/mol'),
-        S298=(-148.86, 'J/(mol*K)'),
+        Cpdata=([1.44, 2.24, 2.93, 3.54, 4.49, 5.18, 6.35], 'J/(mol*K)'),
+        H298=(-182.55, 'kJ/mol'),
+        S298=(-149.81, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged *OCH3 and *OCH2CH3 on Pt(111)""",
+    shortDesc=u"""Came from averaged *OCH3, *OCH2CH3, and *OCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -1102,11 +1102,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([0.82, 4.42, 7.06, 8.96, 11.34, 12.7, 14.44], 'J/(mol*K)'),
-        H298=(-595.15, 'kJ/mol'),
-        S298=(-177.21, 'J/(mol*K)'),
+        Cpdata=([-1.91, 1.58, 4.18, 6.07, 8.47, 9.86, 11.63], 'J/(mol*K)'),
+        H298=(-594.9, 'kJ/mol'),
+        S298=(-174.23, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged *CCH3 and *CCH2CH3 on Pt(111)""",
+    shortDesc=u"""Came from averaged *CCH3, *CCH2CH3, *CCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -1134,11 +1134,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([0.34, 4.49, 7.26, 9.1, 11.22, 12.35, 13.78], 'J/(mol*K)'),
-        H298=(-568.39, 'kJ/mol'),
-        S298=(-181.08, 'J/(mol*K)'),
+        Cpdata=([-1.12, 2.73, 5.33, 7.1, 9.21, 10.37, 11.81], 'J/(mol*K)'),
+        H298=(-571.12, 'kJ/mol'),
+        S298=(-176.66, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged *CH, *CCH3, *COH, *CCHCH2, *CCH2CH3 on Pt(111)""",
+    shortDesc=u"""Came from averaged *CH, *CCH3, *COH, *CCHCH2, *CCH2CH3, CCHO, CCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -1335,11 +1335,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([8.77, 9.71, 10.17, 10.42, 10.63, 10.71, 10.76], 'J/(mol*K)'),
-        H298=(-36.71, 'kJ/mol'),
-        S298=(-123.95, 'J/(mol*K)'),
+        Cpdata=([8.55, 9.48, 9.93, 10.16, 10.36, 10.44, 10.48], 'J/(mol*K)'),
+        H298=(-41.27, 'kJ/mol'),
+        S298=(-125.91, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged CH4, CH3CH3, CH3CH2CH3, CH3CH2OH, CH3OH, CH3OCH3 on Pt(111)""",
+    shortDesc=u"""Came from averaged CH4, CH3CH3, CH3CH2CH3, CH3CH2OH, CH3OH, CH3OCH3, CH3OCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -1764,11 +1764,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([8.9, 10.09, 10.63, 10.88, 11.05, 11.09, 11.11], 'J/(mol*K)'),
-        H298=(-52.35, 'kJ/mol'),
-        S298=(-139.29, 'J/(mol*K)'),
+        Cpdata=([8.44, 9.53, 10.02, 10.25, 10.41, 10.45, 10.47], 'J/(mol*K)'),
+        H298=(-57.56, 'kJ/mol'),
+        S298=(-139.36, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged CH3OH, CH3OCH3, H2CO2H2 on Pt(111)""",
+    shortDesc=u"""Came from averaged CH3OH, CH3OCH3, H2CO2H2, CH3OCH2OH on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -2057,11 +2057,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([-1.81, 1.32, 3.34, 4.67, 6.2, 6.99, 7.81], 'J/(mol*K)'),
-        H298=(-286.69, 'kJ/mol'),
-        S298=(-160.13, 'J/(mol*K)'),
+        Cpdata=([-0.65, 2.4, 4.38, 5.69, 7.2, 7.95, 8.71], 'J/(mol*K)'),
+        H298=(-282.27, 'kJ/mol'),
+        S298=(-161.1, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from averaged HCO, COOH, CH3CO, CHCO on Pt(111)""",
+    shortDesc=u"""Came from averaged HCO, COOH, CH3CO, CHCO, CH3CH2CO on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -2156,9 +2156,9 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([-0.05, 3.52, 5.87, 7.46, 9.32, 10.32, 11.42], 'J/(mol*K)'),
-        H298=(-349.84, 'kJ/mol'),
-        S298=(-173.4, 'J/(mol*K)'),
+        Cpdata=([-0.31, 3.22, 5.55, 7.13, 8.99, 9.99, 11.1], 'J/(mol*K)'),
+        H298=(-359.63, 'kJ/mol'),
+        S298=(-173.0, 'J/(mol*K)'),
     ),
     shortDesc=u"""Averaged from all children on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
@@ -2194,9 +2194,9 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([6.09, 7.97, 8.95, 9.53, 10.15, 10.47, 10.87], 'J/(mol*K)'),
-        H298=(-220.34, 'kJ/mol'),
-        S298=(-156.1, 'J/(mol*K)'),
+        Cpdata=([5.66, 7.38, 8.31, 8.88, 9.52, 9.88, 10.36], 'J/(mol*K)'),
+        H298=(-215.12, 'kJ/mol'),
+        S298=(-155.61, 'J/(mol*K)'),
     ),
     shortDesc=u"""Averaged from all children on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
@@ -2220,9 +2220,9 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([1.09, 4.35, 6.45, 7.84, 9.48, 10.35, 11.32], 'J/(mol*K)'),
-        H298=(-325.74, 'kJ/mol'),
-        S298=(-170.18, 'J/(mol*K)'),
+        Cpdata=([0.84, 4.02, 6.08, 7.46, 9.09, 9.97, 10.96], 'J/(mol*K)'),
+        H298=(-331.96, 'kJ/mol'),
+        S298=(-169.67, 'J/(mol*K)'),
     ),
     shortDesc=u"""Averaged from all children on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
@@ -2359,9 +2359,9 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([7.26, 8.36, 8.94, 9.28, 9.62, 9.77, 9.87], 'J/(mol*K)'),
-        H298=(-55.04, 'kJ/mol'),
-        S298=(-124.33, 'J/(mol*K)'),
+        Cpdata=([7.25, 8.33, 8.9, 9.23, 9.56, 9.7, 9.8], 'J/(mol*K)'),
+        H298=(-56.05, 'kJ/mol'),
+        S298=(-125.18, 'J/(mol*K)'),
     ),
     shortDesc=u"""Averaged of (CR4)*, (CR3)*, and (OR2)* (nitrogen is not included) on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
@@ -3222,9 +3222,9 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([0.38, 3.75, 6.03, 7.56, 9.31, 10.19, 11.05], 'J/(mol*K)'),
-        H298=(-287.37, 'kJ/mol'),
-        S298=(-171.57, 'J/(mol*K)'),
+        Cpdata=([0.32, 3.63, 5.87, 7.37, 9.08, 9.94, 10.77], 'J/(mol*K)'),
+        H298=(-285.22, 'kJ/mol'),
+        S298=(-171.81, 'J/(mol*K)'),
     ),
     shortDesc=u"""Averaged from all children on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
@@ -3286,11 +3286,11 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([1.26, 4.53, 7.18, 9.16, 11.68, 13.1, 14.8], 'J/(mol*K)'),
-        H298=(-568.85, 'kJ/mol'),
-        S298=(-197.63, 'J/(mol*K)'),
+        Cpdata=([-0.45, 2.64, 4.89, 6.54, 8.67, 9.9, 11.29], 'J/(mol*K)'),
+        H298=(-565.15, 'kJ/mol'),
+        S298=(-180.28, 'J/(mol*K)'),
     ),
-    shortDesc=u"""Came from CCHCH2 triple-bonded on Pt(111)""",
+    shortDesc=u"""Came from CCHCH2 and CCHO triple-bonded on Pt(111)""",
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
             Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
             using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
@@ -3335,6 +3335,40 @@ entry(
    |
    O
    |
+***********
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+entry(
+    index = 110,
+    label = "(R3COR)*",
+    group =
+"""
+1 * X u0 p0 c0
+2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
+3 O  u0 p2 c0 {2,S} {7,S}
+4 R  u0 p0 c0 {2,S}
+5 R  u0 p0 c0 {2,S}
+6 R  u0 p0 c0 {2,S}
+7 R  u0 p0 c0 {3,S}
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([8.44, 9.53, 10.02, 10.25, 10.41, 10.45, 10.47], 'J/(mol*K)'),
+        H298=(-57.56, 'kJ/mol'),
+        S298=(-139.36, 'J/(mol*K)'),
+    ),
+    shortDesc=u"""Came from averaged CH3OH, CH3OCH3, H2CO2H2, CH3OCH2OH on Pt(111)""",
+    longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',fmax=2.5e-2.
+
+ R3C-OR
+    :
 ***********
 """,
     metal = "Pt",
@@ -3445,5 +3479,6 @@ L1: R*
             L4: (NRNR)*
         L3: (OR2)*
             L4: (OROR)*
+            L4: (R3COR)*
 """,
 )
