@@ -643,3 +643,31 @@ forbidden(
 u"""
 """,
 )
+
+forbidden(
+    label = "H2",
+    group =
+"""
+multiplicity [1]
+1 *1 H u0 p0 c0 {2,S}
+2    H u0 p0 c0 {1,S}
+""",
+    shortDesc = u"""H2 adsorbs dissociatively on all metals, that's why it is forbidden Bjarne Kreitz""",
+    longDesc =
+u"""
+""",
+)
+
+forbidden(
+    label = "H-C",
+    group =
+"""
+1    C u0 {2,S}
+2 *1 H u0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+H should not match to *1 with a more heavy atom
+""",
+)

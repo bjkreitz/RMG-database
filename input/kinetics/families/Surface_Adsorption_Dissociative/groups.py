@@ -541,3 +541,79 @@ u"""
 H2O is assumed to physisorb and then dissociate, do not consider both pathways at the same time
 """,
 )
+
+forbidden(
+    label = "C2H4",
+    group =
+"""
+1 *1 C u0 p0 c0 {2,D} {3,S} {4,S}
+2    C u0 p0 c0 {1,D} {5,S} {6,S}
+3 *2 H u0 p0 c0 {1,S}
+4    H u0 p0 c0 {1,S}
+5    H u0 p0 c0 {2,S}
+6    H u0 p0 c0 {2,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+C2H4 is assumed to physisorb and then dissociate, do not consider both pathways at the same time
+""",
+)
+
+forbidden(
+    label = "C-C",
+    group =
+"""
+1 *1 C u0 {2,S}
+2 *2 C u0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+No C-C breaking upon dissociative adsorption
+""",
+)
+
+forbidden(
+    label = "C-O",
+    group =
+"""
+1 *1 O u0 {2,S}
+2 *2 C u0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+No C-O breaking upon dissociative adsorption
+""",
+)
+
+forbidden(
+    label = "C-O",
+    group =
+"""
+1 *2 O u0 {2,S}
+2 *1 C u0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+No C-O breaking upon dissociative adsorption
+""",
+)
+
+forbidden(
+    label = "H2CO",
+    group =
+"""
+1 *1 C u0 p0 c0 {2,D} {3,S} {4,S}
+2    O u0 p2 c0 {1,D}
+3 *2 H u0 p0 c0 {1,S}
+4    H u0 p0 c0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+H2CO is assumed to physisorb and then dissociate, do not consider both pathways at the same time
+""",
+)

@@ -614,3 +614,19 @@ L1: Donating
         L3: *-O-N
 """
 )
+
+forbidden(
+    label="XR-R-X",
+    group =
+"""
+1 *4 R   ux px cx {2,S} {4,[S,D,T]}
+2 *3 R!H ux px cx {1,S} {3,[S,D,T]}
+3 *5 Xo  u0 p0 c0 {2,[S,D,T]}
+4    Xo  u0 p0 c0 {1,[S,D,T]}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+The abstracting group should not be bound to the surface as is the case for bidentates. It might be necessary to revise this at some point.  
+""",
+)

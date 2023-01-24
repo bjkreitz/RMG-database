@@ -524,3 +524,60 @@ u"""
 CO binds in a monodentate configuration
 """,
 )
+
+entry(
+    label = "XCHXOOH",
+    species =
+"""
+1 O u0 p2 c0 {3,S} {7,S}
+2 O u0 p2 c0 {3,S} {5,S}
+3 C u0 p0 c0 {1,S} {2,S} {4,S} {6,S}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {2,S}
+6 X u0 p0 c0 {3,S}
+7 X u0 p0 c0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+CHOOH binds in a monodentate configuration
+""",
+)
+
+entry(
+    label = "XCXOOH",
+    species =
+"""
+1 O u0 p2 c0 {3,S} {6,S}
+2 O u0 p2 c0 {3,S} {4,S}
+3 C u0 p0 c0 {1,S} {2,S} {5,D}
+4 H u0 p0 c0 {2,S}
+5 X u0 p0 c0 {3,D}
+6 X u0 p0 c0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+COOH binds in a monodentate configuration
+""",
+)
+
+
+entry(
+    label = "XCH2XCO",
+    species =
+"""
+1 O u0 p2 c0 {3,D}
+2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
+3 C u0 p0 c0 {1,D} {2,S} {7,S}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0 {3,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+CH2CO as a bidentate adsorbate was not confirmed by DFT. A physisorbed species is more stable. 
+""",
+)
