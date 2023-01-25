@@ -16,7 +16,7 @@ x_sobol=sobol.draw(num_pts)
 Delta_alpha=0.1
 Delta_E0=15
 
-alpha_1_ref= 0.37
+alpha_1_ref= 0.84
 alpha_2_ref= 0.37
 alpha_3_ref= 0.94
 alpha_4_ref= 0.65
@@ -28,7 +28,7 @@ alpha_9_ref= 0.37
 alpha_10_ref= 0.37
 alpha_11_ref= 0.94
 
-E0_1_ref=99.3
+E0_1_ref=185.1
 E0_2_ref=99.3
 E0_3_ref=129.3
 E0_4_ref=15.4

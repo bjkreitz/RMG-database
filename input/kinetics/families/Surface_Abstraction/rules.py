@@ -11,8 +11,8 @@ entry(
     kinetics = SurfaceArrheniusBEP(
         A = (4.18e17, 'm^2/(mol*s)'),
         n = 0,
-        alpha = 0.37,
-        E0 = (99.3, 'kJ/mol'),
+        alpha = 0.84,
+        E0 = (44.25, 'kcal/mol'),
         Tmin = (200, 'K'),
         Tmax = (3000, 'K'),
     ),

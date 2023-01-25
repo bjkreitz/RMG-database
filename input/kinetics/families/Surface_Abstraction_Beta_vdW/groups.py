@@ -118,25 +118,25 @@ L1: Donating
 """
 )
 
-forbidden(
-    label = "Donating_Bidentate",
-    group =
-"""
-1 *1 R!H u0 px cx {2,S} {4,S}
-2 *2 R   u0 px cx {1,S} {3,S}
-3 *3 R   u0 {2,S}
-4 *5 Xo  u0 {1,S}
-5    Xo  u0 
-"""
-)
+#forbidden(
+#    label = "Donating_Bidentate",
+#    group =
+#"""
+#1 *1 R!H u0 px cx {2,S} {4,S}
+#2 *2 R   u0 px cx {1,S} {3,S}
+#3 *3 R   u0 {2,S}
+#4 *5 Xo  u0 {1,S}
+#5    Xo  u0 
+#"""
+#)
 
-forbidden(
-    label="Abstracting_Bidentate",
-    group =
-"""
-1 *6 Xo  u0 {2,D}
-2 *4 R!H u0 px cx {1,D}	
-3    Xo  u0 
-"""
-)
+#forbidden(
+#    label="Abstracting_Bidentate",
+#    group =
+#"""
+#1 *6 Xo  u0 {2,D}
+#2 *4 R!H u0 px cx {1,D}	
+#3    Xo  u0 
+#"""
+#)
 
