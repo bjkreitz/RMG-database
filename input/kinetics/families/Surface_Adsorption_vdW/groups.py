@@ -76,8 +76,8 @@ entry(
     group =
 """
 multiplicity [1]
-1    C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 *1 H u0 p0 c0 {1,S}
+1 *1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2    H u0 p0 c0 {1,S}
 3    H u0 p0 c0 {1,S}
 4    H u0 p0 c0 {1,S}
 5    H u0 p0 c0 {1,S}
@@ -607,9 +607,9 @@ multiplicity [1]
 tree(
 """
 L1: Adsorbate
+    L2: CH4
     L2: H
         L3: H2
-        L3: CH4
         L3: NH3
     L2: C
         L3: CC
