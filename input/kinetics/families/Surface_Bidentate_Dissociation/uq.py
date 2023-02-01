@@ -61,5 +61,10 @@ for i in range(num_pts):
           old=line.strip()
           new_line=line.replace(old,old)
           new_file_content += new_line                
-                   
+
+    s.close()
+    writing_file = open(file, "w")
+    writing_file.write(new_file_content)
+    writing_file.close()
+
 
