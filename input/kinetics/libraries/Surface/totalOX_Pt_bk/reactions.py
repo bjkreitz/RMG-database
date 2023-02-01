@@ -262,19 +262,19 @@ entry(
     longDesc = u"""my value"""
 )
 
-entry(
-    index = 19,
-    label = "h-CCH2X <=> h-C2H2X",
-    kinetics = SurfaceArrhenius(
-        A=(4.911e12, '1/s'),
-        n = 0,
-        Ea=(44.13, 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
-    ),
-    shortDesc = u"""Default""",
-    longDesc = u"""my value"""
-)
+#entry(
+#    index = 19,
+#    label = "h-CCH2X <=> h-C2H2X",
+#    kinetics = SurfaceArrhenius(
+#        A=(4.911e12, '1/s'),
+#        n = 0,
+#        Ea=(44.13, 'kJ/mol'),
+#        Tmin = (200, 'K'),
+#        Tmax = (3000, 'K'),
+#    ),
+#    shortDesc = u"""Default""",
+#    longDesc = u"""my value"""
+#)
 
 entry(
     index = 20,

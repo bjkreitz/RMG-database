@@ -590,42 +590,42 @@ for k in range(num_pts):
     writing_file.close()
     
 ####### CCH2X + Pt <=> h-C2H2X###### 
-    s=open(file,'r')
-    new_file_content=""    
-    for line in s:
-      if "    index = 19," in line:   
-          old=line.strip()
-          
-          new_line=line.replace(old,old)
-          new_file_content += new_line   
-          for line in s:
-              if line.startswith("        Ea="):
-                   old=line.strip()
-                   data=pd.read_csv('ensembles/CHCH-CCH2-bee.txt', sep="\t", header=0)
-                   perturbation=data.iloc[k,1]
-                   bits=line.split("(")
-                   correction=float(bits[1].split(",")[0])+perturbation
-                   modified="".join(('Ea=(', str(np.round(correction,2)),", 'kJ/mol'),"))
-                   new_line=line.replace(old,modified)
-                   new_file_content += new_line   
-              elif "    index = 20," in line:  
-                   old=line.strip()
-                   new_line=line.replace(old,old)
-                   new_file_content += new_line    
-                   break    
-              else:
-                    old=line.strip()
-                    new_line=line.replace(old,old)
-                    new_file_content += new_line     
-      else:
-          old=line.strip()
-          new_line=line.replace(old,old)
-          new_file_content += new_line                
-                   
-    s.close()
-    writing_file = open(file, "w")
-    writing_file.write(new_file_content)
-    writing_file.close()
+#    s=open(file,'r')
+#    new_file_content=""    
+#    for line in s:
+#      if "    index = 19," in line:   
+#          old=line.strip()
+#          
+#          new_line=line.replace(old,old)
+#          new_file_content += new_line   
+#          for line in s:
+#              if line.startswith("        Ea="):
+#                   old=line.strip()
+#                   data=pd.read_csv('ensembles/CHCH-CCH2-bee.txt', sep="\t", header=0)
+#                   perturbation=data.iloc[k,1]
+#                   bits=line.split("(")
+#                   correction=float(bits[1].split(",")[0])+perturbation
+#                   modified="".join(('Ea=(', str(np.round(correction,2)),", 'kJ/mol'),"))
+#                   new_line=line.replace(old,modified)
+#                   new_file_content += new_line   
+#              elif "    index = 20," in line:  
+#                   old=line.strip()
+#                   new_line=line.replace(old,old)
+#                   new_file_content += new_line    
+#                   break    
+#              else:
+#                    old=line.strip()
+#                    new_line=line.replace(old,old)
+#                    new_file_content += new_line     
+#      else:
+#          old=line.strip()
+#          new_line=line.replace(old,old)
+#          new_file_content += new_line                
+#                   
+#    s.close()
+#    writing_file = open(file, "w")
+#    writing_file.write(new_file_content)
+#    writing_file.close()
     
 ####### OCX + Pt <=> CX + OX ###### 
     s=open(file,'r')
