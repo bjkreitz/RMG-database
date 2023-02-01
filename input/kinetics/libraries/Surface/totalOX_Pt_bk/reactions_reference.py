@@ -489,7 +489,7 @@ entry(
 
 entry(
     index = 35,
-    label = "CXCH3 + Pt + Pt <=> h-CCH2X + HX",
+    label = "CCH3X + Pt + Pt <=> h-CCH2X + HX",
     kinetics = SurfaceArrhenius(
         A=(6.639E+28, 'cm^4/(mol^2*s)'),
         n = 0,
@@ -503,7 +503,7 @@ entry(
 
 entry(
     index = 36,
-    label = "CXCH3 + OX <=> CH3XCO + Pt",
+    label = "CCH3X + OX <=> CH3XCO + Pt",
     kinetics = SurfaceArrhenius(
         A=(1.123E+22, 'cm^2/(mol*s)'),
         n = 0,
