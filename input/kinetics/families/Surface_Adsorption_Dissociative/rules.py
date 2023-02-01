@@ -44,7 +44,7 @@ entry(
     index = 3,
     label = "CH4;VacantSite1;VacantSite2",
     kinetics = StickingCoefficientBEP(
-        A = 1.51,
+        A = 6.04,
         n = 0,
         alpha =0.0,
         E0 = (58.0, 'kJ/mol'),

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 import pandas as pd
 
-num_pts=2
+num_pts=2000
 
 name='reactions'
 
@@ -1197,3 +1197,119 @@ for k in range(num_pts):
     writing_file = open(file, "w")
     writing_file.write(new_file_content)
     writing_file.close()
+    
+####### CXCH3 + Pt + Pt <=> h-CCH2X + HX ###### 
+    s=open(file,'r')
+    new_file_content=""    
+    for line in s:
+      if "    index = 35," in line:   
+          old=line.strip()
+          
+          new_line=line.replace(old,old)
+          new_file_content += new_line   
+          for line in s:
+              if line.startswith("        Ea="):
+                   old=line.strip()
+                   data=pd.read_csv('ensembles/CCH2-H-bee.txt', sep="\t", header=0)
+                   perturbation=data.iloc[k,1]
+                   bits=line.split("(")
+                   correction=float(bits[1].split(",")[0])+perturbation
+                   modified="".join(('Ea=(', str(np.round(correction,2)),", 'kJ/mol'),"))
+                   new_line=line.replace(old,modified)
+                   new_file_content += new_line   
+              elif "    index = 36," in line:  
+                   old=line.strip()
+                   new_line=line.replace(old,old)
+                   new_file_content += new_line    
+                   break    
+              else:
+                    old=line.strip()
+                    new_line=line.replace(old,old)
+                    new_file_content += new_line     
+      else:
+          old=line.strip()
+          new_line=line.replace(old,old)
+          new_file_content += new_line                
+                   
+    s.close()
+    writing_file = open(file, "w")
+    writing_file.write(new_file_content)
+    writing_file.close()
+    
+####### CXCH3 + OX <=> CH3XCO + Pt ###### 
+    s=open(file,'r')
+    new_file_content=""    
+    for line in s:
+      if "    index = 36," in line:   
+          old=line.strip()
+          
+          new_line=line.replace(old,old)
+          new_file_content += new_line   
+          for line in s:
+              if line.startswith("        Ea="):
+                   old=line.strip()
+                   data=pd.read_csv('ensembles/CH3C-O-FS-bee.txt', sep="\t", header=0)
+                   perturbation=data.iloc[k,1]
+                   bits=line.split("(")
+                   correction=float(bits[1].split(",")[0])+perturbation
+                   modified="".join(('Ea=(', str(np.round(correction,2)),", 'kJ/mol'),"))
+                   new_line=line.replace(old,modified)
+                   new_file_content += new_line   
+              elif "    index = 37," in line:  
+                   old=line.strip()
+                   new_line=line.replace(old,old)
+                   new_file_content += new_line    
+                   break    
+              else:
+                    old=line.strip()
+                    new_line=line.replace(old,old)
+                    new_file_content += new_line     
+      else:
+          old=line.strip()
+          new_line=line.replace(old,old)
+          new_file_content += new_line                
+                   
+    s.close()
+    writing_file = open(file, "w")
+    writing_file.write(new_file_content)
+    writing_file.close()    
+    
+####### CH3X + OCX <=> CH3XCO + Pt ###### 
+    s=open(file,'r')
+    new_file_content=""    
+    for line in s:
+      if "    index = 37," in line:   
+          old=line.strip()
+          
+          new_line=line.replace(old,old)
+          new_file_content += new_line   
+          for line in s:
+              if line.startswith("        Ea="):
+                   old=line.strip()
+                   data=pd.read_csv('ensembles/CH3-CO-FS-bee.txt', sep="\t", header=0)
+                   perturbation=data.iloc[k,1]
+                   bits=line.split("(")
+                   correction=float(bits[1].split(",")[0])+perturbation
+                   modified="".join(('Ea=(', str(np.round(correction,2)),", 'kJ/mol'),"))
+                   new_line=line.replace(old,modified)
+                   new_file_content += new_line   
+              elif "    index = 38," in line:  
+                   old=line.strip()
+                   new_line=line.replace(old,old)
+                   new_file_content += new_line    
+                   break    
+              else:
+                    old=line.strip()
+                    new_line=line.replace(old,old)
+                    new_file_content += new_line     
+      else:
+          old=line.strip()
+          new_line=line.replace(old,old)
+          new_file_content += new_line                
+                   
+    s.close()
+    writing_file = open(file, "w")
+    writing_file.write(new_file_content)
+    writing_file.close()    
+
+

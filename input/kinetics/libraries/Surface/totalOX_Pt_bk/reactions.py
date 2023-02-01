@@ -457,3 +457,74 @@ entry(
     shortDesc = u"""Default""",
     longDesc = u"""my value"""
 )
+
+entry(
+    index = 33,
+    label = "CH4 + Pt + Pt <=> CH3X + HX",
+    kinetics = StickingCoefficient(
+        A = 6.04,
+        n = 0,
+        Ea=(58, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""Default""",
+    longDesc = u"""my value"""
+)
+
+entry(
+    index = 34,
+    label = "C2H6 + Pt + Pt <=> CH2CH3X + HX",
+    kinetics = StickingCoefficient(
+        A = 2.052,
+        n = 0,
+        Ea=(42.7, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""Default""",
+    longDesc = u"""my value"""
+)
+
+
+entry(
+    index = 35,
+    label = "CXCH3 + Pt + Pt <=> h-CCH2X + HX",
+    kinetics = SurfaceArrhenius(
+        A=(6.639E+28, 'cm^4/(mol^2*s)'),
+        n = 0,
+        Ea=(126.70, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""Default""",
+    longDesc = u"""my value"""
+)
+
+entry(
+    index = 36,
+    label = "CXCH3 + OX <=> CH3XCO + Pt",
+    kinetics = SurfaceArrhenius(
+        A=(1.123E+22, 'cm^2/(mol*s)'),
+        n = 0,
+        Ea=(156.01, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""Default""",
+    longDesc = u"""my value"""
+)
+
+entry(
+    index = 37,
+    label = "CH3X + OCX <=> CH3XCO + Pt",
+    kinetics = SurfaceArrhenius(
+        A=(4.487E+21, 'cm^2/(mol*s)'),
+        n = 0,
+        Ea=(177.78, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""Default""",
+    longDesc = u"""my value"""
+)

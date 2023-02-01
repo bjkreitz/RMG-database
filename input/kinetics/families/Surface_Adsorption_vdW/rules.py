@@ -26,7 +26,7 @@ entry(
     index = 2,
     label = "C2H4;VacantSite",
     kinetics = StickingCoefficientBEP(
-        A = 0.67,
+        A = 0.01,
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
